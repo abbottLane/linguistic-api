@@ -51,13 +51,13 @@ query{
 ```
 
 Query to retrieve a list of document IDs from the User table given a userID
-"""
+```
 query{
    userDocuments(id:2){
      id
    }
  }
-"""
+```
 
 ## The Prisma Document schema
 

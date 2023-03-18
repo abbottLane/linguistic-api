@@ -11,4 +11,9 @@ export class UserResolver {
   user(@Args('id') id: number) {
     return this.userService.findByID(id);
   }
+
+  @Query(() => [User])
+  userDocuments(@Args('id') id: number) {
+    return this.userService.getDocs(id);
+  }
 }

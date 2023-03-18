@@ -12,4 +12,5 @@ export class User implements UserModel {
 
   @Field()
   email: string;
+
 }

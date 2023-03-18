@@ -13,4 +13,8 @@ export class UserService {
       },
     });
   }
+  // return all the documents attached to a user by id
+  getDocs(id: number) {
+    return this.prismaService.user.findUniqueOrThrow({ where: { id } }).documents();
+  }
 }
